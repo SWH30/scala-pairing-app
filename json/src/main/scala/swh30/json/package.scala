@@ -7,9 +7,9 @@ import io.circe.Decoder
 
 package object json {
 
-  implicit val DeveloperDecoder: Decoder[Developer] = deriveDecoder[Developer]
-  implicit val PairDecoder: Decoder[Pair] = deriveDecoder[Pair]
-  implicit val HistoryDecoder: Decoder[History] = deriveDecoder[History]
+  implicit val DeveloperDecoder: Decoder[Developer]       = deriveDecoder[Developer]
+  implicit val PairDecoder: Decoder[Pair]                 = deriveDecoder[Pair]
+  implicit val HistoryDecoder: Decoder[History]           = deriveDecoder[History]
   implicit val DailyPairingDecoder: Decoder[DailyPairing] = deriveDecoder[DailyPairing]
 
   implicit val ModelDecoder: Decoder[Model] =
