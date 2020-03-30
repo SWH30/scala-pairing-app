@@ -118,6 +118,7 @@ Temporary Items
 
 ### Metals ###
 .metals/
+.bloop/
 
 ### SBT ###
 # Simple Build Tool
