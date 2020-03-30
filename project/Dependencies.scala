@@ -5,7 +5,7 @@ object Dependencies {
 
   object Versions {
     val PureConfig     = "0.12.2"
-    val ScalaTest      = "3.2.0-M2"
+    val ScalaTest      = "3.1.1"
   }
 
   object Libraries {
