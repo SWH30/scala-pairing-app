@@ -13,6 +13,10 @@ val domain = PairProject("domain")
     .settings(Dependencies.domain)
     .dependsOn(model)
 
+val json = PairProject("json")
+  .settings(Dependencies.json)
+  .dependsOn(model)
+
 val application = PairProject("application")
     .settings(mainClass := Some("swh30.application.Main"))
     .settings(Dependencies.application)
@@ -21,7 +25,8 @@ val application = PairProject("application")
 
 lazy val projects: Seq[ProjectReference] = Seq(
   model, 
-  application
+  application,
+  domain,
 )
 
 val root = project.in(file(".")) aggregate (projects: _*)
