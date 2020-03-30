@@ -9,11 +9,15 @@ def PairProject(name: String): Project =
 
 val model = PairProject("model")
 
+val domain = PairProject("domain")
+    .settings(Dependencies.domain)
+    .dependsOn(model)
+
 val application = PairProject("application")
     .settings(mainClass := Some("swh30.application.Main"))
     .settings(Dependencies.application)
     .settings(fork in run := true)
-    .dependsOn(model)
+    .dependsOn(domain)
 
 lazy val projects: Seq[ProjectReference] = Seq(
   model, 

@@ -3,7 +3,7 @@ package swh30.application
 import pureconfig._
 import pureconfig.generic.auto._
 
-object Main extends Logging {
+object Main {
 
   def main(args: Array[String]): Unit = {
 
