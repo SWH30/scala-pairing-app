@@ -1,3 +1,3 @@
 package swh30.model
 
-case class Developer(name: String)
+final case class Developer(name: String) extends Model

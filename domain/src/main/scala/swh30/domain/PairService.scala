@@ -9,8 +9,7 @@ sealed trait PairService {
 
 object PairService {
   case object RandomPair extends PairService {
-    override def getPairsFromDevelopers(developers: List[Developer]): List[Pair]=
-    {
+    override def getPairsFromDevelopers(developers: List[Developer]): List[Pair] = {
       val pairs = developers.sliding(2, 2).toList
       pairs.map(pair =>
         if (pair.length == 2) Pair(pair.head, pair(1))

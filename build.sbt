@@ -10,18 +10,24 @@ def PairProject(name: String): Project =
 val model = PairProject("model")
 
 val domain = PairProject("domain")
-    .settings(Dependencies.domain)
-    .dependsOn(model)
+  .settings(Dependencies.domain)
+  .dependsOn(model)
+
+val json = PairProject("json")
+  .settings(Dependencies.json)
+  .dependsOn(model)
 
 val application = PairProject("application")
-    .settings(mainClass := Some("swh30.application.Main"))
-    .settings(Dependencies.application)
-    .settings(fork in run := true)
-    .dependsOn(domain)
+  .settings(mainClass := Some("swh30.application.Main"))
+  .settings(Dependencies.application)
+  .settings(fork in run := true)
+  .dependsOn(domain)
 
 lazy val projects: Seq[ProjectReference] = Seq(
-  model, 
-  application
+  model,
+  application,
+  domain,
+  json
 )
 
 val root = project.in(file(".")) aggregate (projects: _*)

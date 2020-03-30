@@ -1,0 +1,94 @@
+{
+  "pairHistory": [
+    [
+      {
+        "primary": "Andreas",
+        "secondary": "Binita"
+      },
+      {
+        "primary": "Brian",
+        "secondary": "Ghena"
+      },
+      {
+        "primary": "Piotr",
+        "secondary": "Steve"
+      },
+      {
+        "primary": "Susan",
+        "secondary": ""
+      }
+    ],
+    [
+      {
+        "primary": "Binita",
+        "secondary": "Brian"
+      },
+      {
+        "primary": "Ghena",
+        "secondary": "Piotr"
+      },
+      {
+        "primary": "Steve",
+        "secondary": "Susan"
+      },
+      {
+        "primary": "Andreas",
+        "secondary": ""
+      }
+    ],
+    [
+      {
+        "primary": "Brian",
+        "secondary": "Andreas"
+      },
+      {
+        "primary": "Piotr",
+        "secondary": "Binita"
+      },
+      {
+        "primary": "Susan",
+        "secondary": "Ghena"
+      },
+      {
+        "primary": "Steve",
+        "secondary": ""
+      }
+    ],
+    [
+      {
+        "primary": "Andreas",
+        "secondary": "Piotr"
+      },
+      {
+        "primary": "Binita",
+        "secondary": "Susan"
+      },
+      {
+        "primary": "Ghena",
+        "secondary": "Steve"
+      },
+      {
+        "primary": "Brian",
+        "secondary": ""
+      }
+    ],
+    [
+      {
+        "primary": "Piotr",
+        "secondary": "Brian"
+      },
+      {
+        "primary": "Susan",
+        "secondary": "Andreas"
+      },
+      {
+        "primary": "Steve",
+        "secondary": "Binita"
+      },
+      {
+        "primary": "Ghena",
+        "secondary": ""
+      }
+    ]
+  ]
+}
